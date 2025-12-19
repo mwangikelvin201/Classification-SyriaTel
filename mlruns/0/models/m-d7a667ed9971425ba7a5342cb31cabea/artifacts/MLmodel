@@ -1,0 +1,33 @@
+artifact_path: /home/kamwas/datascience/Classification-SyriaTel/mlruns/0/models/m-d7a667ed9971425ba7a5342cb31cabea/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+is_signature_from_type_hint: false
+mlflow_version: 3.7.0
+model_id: m-d7a667ed9971425ba7a5342cb31cabea
+model_size_bytes: 964
+model_uuid: m-d7a667ed9971425ba7a5342cb31cabea
+prompts: null
+run_id: 966d1003ff3540cf8283046bf61afb21
+signature:
+  inputs: '[{"type": "double", "name": "total day calls", "required": true}, {"type":
+    "double", "name": "total eve calls", "required": true}, {"type": "double", "name":
+    "total night calls", "required": true}, {"type": "double", "name": "total intl
+    calls", "required": true}, {"type": "double", "name": "customer service calls",
+    "required": true}, {"type": "double", "name": "international plan_yes", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-12-19 09:47:13.537379'
